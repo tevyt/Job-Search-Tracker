@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ApplicationStatus {
+  APPLIED
+  SCREENING
+  INTERVIEWING
+  OFFER
+  ACCEPTED
+  REJECTED
+  WITHDRAWN
+}
+
+enum WorkMode {
+  REMOTE
+  HYBRID
+  ONSITE
+}
+
+model JobApplication {
+  id          String            @id @default(cuid())
+  userId      String
+  companyName String
+  jobTitle    String
+  status      ApplicationStatus @default(APPLIED)
+  dateApplied DateTime          @default(now())
+  url         String?
+  salaryRange String?
+  contact     String?
+  location    String?
+  workMode    WorkMode?
+  notes       String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@index([userId])
+  @@index([userId, status])
+}
