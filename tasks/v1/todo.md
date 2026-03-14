@@ -10,8 +10,8 @@
 
 ## Phase 2: Shared Constants & Utilities
 
-- [ ] 2.1 Constants
-- [ ] 2.2 Query Functions
+- [x] 2.1 Constants
+- [x] 2.2 Query Functions
 
 ## Phase 3: Application Management (CRUD)
 

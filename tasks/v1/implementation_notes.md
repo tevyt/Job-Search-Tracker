@@ -7,7 +7,11 @@
 Prisma 7 introduced significant changes from earlier versions:
 
 - **Connection URLs removed from `schema.prisma`**: The `url` and `directUrl` properties are no longer allowed in the `datasource` block. They must be configured in `prisma.config.ts` instead.
-- **Client output location**: Prisma 7 defaults to generating the client in `app/generated/prisma` rather than `node_modules/.prisma/client`. Imports use `@/app/generated/prisma`.
+- **Client output location**: Prisma 7 defaults to generating the client in `app/generated/prisma` rather than `node_modules/.prisma/client`.
+- **No barrel export**: Prisma 7 does not generate an `index.ts` barrel file, so importing from `@/app/generated/prisma` directly does not work. Each module must be imported individually:
+  - Enums: `@/app/generated/prisma/enums`
+  - Client: `@/app/generated/prisma/client`
+  - Models/types: `@/app/generated/prisma/models`
 - **Environment loading**: `prisma.config.ts` uses `dotenv` to load environment variables. The default `import "dotenv/config"` loads `.env`, not `.env.local`. We switched to `dotenv.config({ path: ".env.local" })` to load the correct file.
 
 ### Supabase + Prisma Connection Issues
