@@ -105,12 +105,12 @@ export default function ApplicationTable({
           placeholder="Search company or title..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:w-auto dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
         />
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm sm:w-auto dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
         >
           <option value="ALL">All Statuses</option>
           {Object.entries(STATUS_LABELS).map(([value, label]) => (
@@ -122,7 +122,7 @@ export default function ApplicationTable({
         <select
           value={workModeFilter}
           onChange={(e) => setWorkModeFilter(e.target.value)}
-          className="rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm sm:w-auto dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
         >
           <option value="ALL">All Work Modes</option>
           {Object.entries(WORK_MODE_LABELS).map(([value, label]) => (
