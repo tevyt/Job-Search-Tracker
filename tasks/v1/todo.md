@@ -32,11 +32,11 @@
 
 ## Phase 5: Reports & Statistics
 
-- [ ] 5.1 Reports Page
-- [ ] 5.2 Status Bar Chart
-- [ ] 5.3 Timeline Chart
-- [ ] 5.4 Summary Statistics
-- [ ] 5.5 CSV Export
+- [x] 5.1 Reports Page
+- [x] 5.2 Status Bar Chart
+- [x] 5.3 Timeline Chart
+- [x] 5.4 Summary Statistics
+- [x] 5.5 CSV Export
 
 ## Phase 6: Navigation & Polish
 
