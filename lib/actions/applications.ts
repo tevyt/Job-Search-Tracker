@@ -112,4 +112,5 @@ export async function deleteApplication(id: string) {
   });
 
   revalidatePath("/dashboard");
+  redirect("/dashboard")
 }
