@@ -4,6 +4,10 @@ A web application for tracking job applications and monitoring progress through 
 
 This project also serves as an experiment in **Spec Driven Development** — all features are defined through detailed requirements and technical specifications before implementation begins. See `requirements.md`, `specs.md`, and `tasks/` for the full spec-to-implementation workflow.
 
+## Live Demo
+
+The experiment in spec driven development was successful! The deployed application is available at [https://job-search-tracker-wzas.vercel.app/](https://job-search-tracker-wzas.vercel.app/).
+
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router), React 19, TypeScript
