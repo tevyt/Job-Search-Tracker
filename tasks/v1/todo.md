@@ -23,12 +23,12 @@
 
 ## Phase 4: Dashboard
 
-- [ ] 4.1 Dashboard Page
-- [ ] 4.2 Application Table Component
-- [ ] 4.3 Sorting
-- [ ] 4.4 Filtering
-- [ ] 4.5 Search
-- [ ] 4.6 Dashboard Loading State
+- [x] 4.1 Dashboard Page
+- [x] 4.2 Application Table Component
+- [x] 4.3 Sorting
+- [x] 4.4 Filtering
+- [x] 4.5 Search
+- [x] 4.6 Dashboard Loading State
 
 ## Phase 5: Reports & Statistics
 
