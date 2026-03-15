@@ -68,9 +68,9 @@ export default async function ReportsPage() {
   ).length;
   const interviewPlusCount = applications.filter((a) =>
     [
-      ApplicationStatus.INTERVIEWING,
-      ApplicationStatus.OFFER,
-      ApplicationStatus.ACCEPTED,
+      ApplicationStatus.INTERVIEWING as string,
+      ApplicationStatus.OFFER as string,
+      ApplicationStatus.ACCEPTED as string,
     ].includes(a.status),
   ).length;
 
