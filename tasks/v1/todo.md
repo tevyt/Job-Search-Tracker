@@ -15,11 +15,11 @@
 
 ## Phase 3: Application Management (CRUD)
 
-- [ ] 3.1 Server Actions
-- [ ] 3.2 Application Form Component
-- [ ] 3.3 New Application Page
-- [ ] 3.4 Edit Application Page
-- [ ] 3.5 Delete Confirmation Component
+- [x] 3.1 Server Actions
+- [x] 3.2 Application Form Component
+- [x] 3.3 New Application Page
+- [x] 3.4 Edit Application Page
+- [x] 3.5 Delete Confirmation Component
 
 ## Phase 4: Dashboard
 
